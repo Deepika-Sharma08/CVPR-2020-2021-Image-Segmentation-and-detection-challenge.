@@ -9,6 +9,7 @@ Lets' segment satellite earth images.
 
 
 This is an open competition posted by CVPR 2020 & 2021] Agriculture-Vision Dataset, Prize Challenge and Workshop: 
+
 A joint effort with many great collaborators to bring Agriculture and Computer Vision/AI communities together to benefit humanity! 
  Resources : 
 
@@ -18,10 +19,14 @@ I have been working on this problem for a few months now and have tried various 
 
 The description of the problem is as follows:
 
-The dataset used in this challenge is a subset of the Agriculture-Vision dataset. 
+The dataset used in this challenge is a subset of the Agriculture-Vision dataset.
+
 The challenge dataset contains 21,061 aerial farmland images captured throughout 2019 across the US. 
+
 Each image consists of four 512x512 color channels, which are RGB and Near Infra-red (NIR). Each image also has a boundary map and a mask. 
+
 The boundary map indicates the region of the farmland, and the mask indicates valid pixels in the image. 
+
 Regions outside of either the boundary map or the mask are not evaluated.
 
 This dataset contains six types of annotations: Cloud shadow, Double plant, Planter skip, Standing Water, Waterway and Weed cluster. 
@@ -62,9 +67,15 @@ Challenges
 Resolutions
 
    1. Removed Planter skip from input data since the images for this class were too less for training.
-   2. Filtered images which were poor resolution during pre-processing. Resulted number of images given for model training is 12,298 instead 12,901.
-   3. For data preparation, I encoded each class with a unique prime number to ensure that each class is uniquely identified, even if classes overlap in image. For  ex, if classes were encoded as 1,2,3,4,5,6 then summing all the images to create one annotated image for training would have entry for overlapped 1 and 5 & actual 6.
-   4. Few more tricks: If classes overlapped, the sum of all the classes would not be one among numbers used for encoding, which is set([1,3,5,11,23,53]). So, I removed overlapping classes since the number of images with overlapping classes turned out to be too less. Re-encoded the classes as 1,2,3,4,5 such that num_of_classes could be input as 6 in the model, else model would pick maximum numeric available in an image as num of classes. 
+   2. Filtered images which were poor resolution during pre-processing. Resulted number of images is 12,298 instead 12,901.
+   3. For data preparation, I encoded each class with a unique prime number to ensure that each class is uniquely identified, even if classes overlap in image. 
+   
+   For  ex, if classes were encoded as 1,2,3,4,5,6 then summing all the images to create one annotated image for training would have entry for overlapped 1 and 5 & actual 6.
+   4. Few more tricks: If classes overlapped, the sum of all the classes would not be one among numbers used for encoding, which is set([1,3,5,11,23,53]). 
+   
+   So, I removed overlapping classes since the number of images with overlapping classes turned out to be too less. 
+   
+   Re-encoded the classes as 1,2,3,4,5 such that num_of_classes could be input as 6 in the model, else model would pick maximum numeric available in an image as num of classes. 
 
 
 
