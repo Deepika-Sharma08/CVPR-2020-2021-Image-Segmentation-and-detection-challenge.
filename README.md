@@ -31,7 +31,7 @@ This dataset contains six types of annotations: Cloud shadow, Double plant, Plan
 These types of field anomalies have great impacts on the potential yield of farmlands, therefore it is extremely important to accurately locate them. 
 In the Agriculture-Vision dataset, these six patterns are stored separately as binary masks due to potential overlaps between patterns. 
 
-0 - background,  1 - cloud_shadow,  2 - double_plant,  3 - planter_skip,  4 - standing_water,  5 - waterway,  6 - weed_cluster
+0 - background,  1 - cloud_shadow,  2 - double_plant,  3 - planter_skip,  4 - standing_water,  5 - waterway,  6 - weed_cluster.
 
 Sample images
 
