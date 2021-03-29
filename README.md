@@ -7,7 +7,6 @@ Lets' segment satellite earth images.
 ![alt text](https://github.com/Deepika-Sharma08/CVPR-2020-2021-Image-Segmentation-and-detection-challenge./blob/main/supporting%20images/1.png?raw=true)
 
 
-
 This is an open competition posted by CVPR 2020 & 2021] Agriculture-Vision Dataset, Prize Challenge and Workshop: 
 
 A joint effort with many great collaborators to bring Agriculture and Computer Vision/AI communities together to benefit humanity! 
@@ -131,4 +130,34 @@ To make use of the outcomes of all the trained models (one for each class), I us
 
 
 
- 
+ ![alt text](https://github.com/Deepika-Sharma08/CVPR-2020-2021-Image-Segmentation-and-detection-challenge./blob/main/prediction/1.png
+?raw=true)
+
+
+![alt text](https://github.com/Deepika-Sharma08/CVPR-2020-2021-Image-Segmentation-and-detection-challenge./blob/main/prediction/2.png
+?raw=true)
+
+
+![alt text](https://github.com/Deepika-Sharma08/CVPR-2020-2021-Image-Segmentation-and-detection-challenge./blob/main/prediction/3.png
+?raw=true)
+
+
+![alt text](https://github.com/Deepika-Sharma08/CVPR-2020-2021-Image-Segmentation-and-detection-challenge./blob/main/prediction/4.png
+?raw=true)
+
+
+![alt text](https://github.com/Deepika-Sharma08/CVPR-2020-2021-Image-Segmentation-and-detection-challenge./blob/main/prediction/5.png
+?raw=true)
+
+
+![alt text](https://github.com/Deepika-Sharma08/CVPR-2020-2021-Image-Segmentation-and-detection-challenge./blob/main/prediction/6.png
+?raw=true)
+
+
+![alt text](https://github.com/Deepika-Sharma08/CVPR-2020-2021-Image-Segmentation-and-detection-challenge./blob/main/prediction/7.png
+?raw=true)
+
+
+![alt text](https://github.com/Deepika-Sharma08/CVPR-2020-2021-Image-Segmentation-and-detection-challenge./blob/main/prediction/8.png
+?raw=true)
+
