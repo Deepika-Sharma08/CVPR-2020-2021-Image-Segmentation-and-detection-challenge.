@@ -73,4 +73,62 @@ Resolutions
 
 
 
+
+Training Method
+
+    Trained first model for all 6 classes with following configurations:
+
+a. Model Name : VGG_Unet b. Backbone : ImageNet c. Epochs : 50 d. steps_per_epoch : 5 Reported Loss : 2.5 (which is too high for any classification model)
+
+
+    #backbone = resnet50
+
+    size = 512
+
+    model = vgg_unet(
+
+           n_classes=6, input_height=size, input_width=size)
+
+
+    model.train(
+
+       train_images = "input_train/", 
+
+       train_annotations = "train_annotated_final/",n_classes = 6,epochs=50,steps_per_epoch=5,
+
+    )
+
+The accuracy did not look good after trying different backbone nets to train model with 6 classes using various pre processing techniques, since one class is most dominating in the labels and other classes have marginal distribution. So,  I decided to move onto training one model for each class and combine the results to see prediction.
+
+
+    size = 512
+
+    from keras_segmentation.models.unet import vgg_unet
+
+    model_cloud = vgg_unet(n_classes=2, input_height=size, input_width=size)
+
+
+    model_cloud.train(
+
+       train_images = "input_train/",
+
+       train_annotations = "train_annotated_cloud_shadow/",n_classes = 2,epochs=10,steps_per_epoch=5,
+
+    )
+
+
+    Trained model_weed, model_dbl_plant, model_std_water, model_waterway and model_cloud
+
+
+Finally models result combination
+
+ for idx,img_name in enumerate(os.listdir(input_train)):
+
+out = model_weed/model_dbl_plant/model_cloud/model_std_water/model_waterway. predict_segmentation( inp= dir_+ img_name, out_fname= output_dir + "/" + img_name.split(".")[0] + "_weed/_dbl_plant/_cloud/_std_water/_waterway.png" ) 
+Results
+
+To make use of the outcomes of all the trained models (one for each class), I used a histogram based binning to find threshold to identify thresholds for class = 0/1/2/3/4.
+
+
+
  
