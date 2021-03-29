@@ -12,6 +12,8 @@ This is an open competition posted by CVPR 2020 & 2021] Agriculture-Vision Datas
 
 A joint effort with many great collaborators to bring Agriculture and Computer Vision/AI communities together to benefit humanity! 
 
+
+
 Resources : 
 
 www.agriculture-vision.com and https://github.com/SHI-Labs/Agriculture-Vision#download.
@@ -66,8 +68,7 @@ Resolutions
    2. Filtered images which were poor resolution during pre-processing. Resulted number of images is 12,298 instead 12,901.
    3. For data preparation, I encoded each class with a unique prime number to ensure that each class is uniquely identified, even if classes overlap in image. 
       For  ex: if classes were encoded as 1,2,3,4,5,6 then summing all the images to create one annotated image for training would have entry for overlapped 1 and 5 &     actual 6.
-   4. Few more tricks: If classes overlapped, the sum of all the classes would not be one among numbers used for encoding, which is set([1,3,5,11,23,53]).   
-   So, I removed overlapping classes since the number of images with overlapping classes turned out to be too less.   
+   4. Few more tricks: If classes overlapped, the sum of all the classes would not be one among numbers used for encoding, which is set([1,3,5,11,23,53]).So, I removed overlapping classes since the number of images with overlapping classes turned out to be too less.   
    Re-encoded the classes as 1,2,3,4,5 such that num_of_classes could be input as 6 in the model, else model would pick maximum numeric available in an image as num of classes. 
 
 
