@@ -1,6 +1,6 @@
 # CVPR-2020-2021-Image-Segmentation-and-Detection-challenge.
 Lets' segment satellite earth images.
-![alt text](https://github.com/Deepika-Sharma08/CVPR-2020-2021-Image-Segmentation-and-detection-challenge./blob/master/supporting_images/1.png?raw=true)
+![alt text](https://github.com/Deepika-Sharma08/CVPR-2020-2021-Image-Segmentation-and-detection-challenge./blob/main/supporting%20images/1.png?raw=true)
 
 
 
