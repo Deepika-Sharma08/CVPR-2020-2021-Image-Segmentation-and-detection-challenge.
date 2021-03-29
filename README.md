@@ -11,20 +11,15 @@ Lets' segment satellite earth images.
 This is an open competition posted by CVPR 2020 & 2021] Agriculture-Vision Dataset, Prize Challenge and Workshop: 
 
 A joint effort with many great collaborators to bring Agriculture and Computer Vision/AI communities together to benefit humanity! 
- Resources : 
 
+Resources : 
 www.agriculture-vision.com and https://github.com/SHI-Labs/Agriculture-Vision#download.
 
 I have been working on this problem for a few months now and have tried various methods to solve this problem. 
-
 The description of the problem is as follows:
-
 The dataset used in this challenge is a subset of the Agriculture-Vision dataset.
-
 The challenge dataset contains 21,061 aerial farmland images captured throughout 2019 across the US. 
-
 Each image consists of four 512x512 color channels, which are RGB and Near Infra-red (NIR). Each image also has a boundary map and a mask. 
-
 The boundary map indicates the region of the farmland, and the mask indicates valid pixels in the image. 
 
 Regions outside of either the boundary map or the mask are not evaluated.
