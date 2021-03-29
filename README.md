@@ -1,4 +1,4 @@
-     # CVPR-2020-2021
+                              CVPR-2020-2021
 # Satellite Earth Image-Segmentation-and-Detection-challenge.
 Lets' segment satellite earth images.
 
