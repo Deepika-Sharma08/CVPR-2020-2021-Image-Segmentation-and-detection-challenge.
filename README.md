@@ -1,5 +1,6 @@
-                              CVPR-2020-2021
+                                                                      CVPR-2020-2021
 # Satellite Earth Image-Segmentation-and-Detection-challenge.
+
 Lets' segment satellite earth images.
 
 
@@ -7,16 +8,25 @@ Lets' segment satellite earth images.
 
 
 
-This is an open competition posted by CVPR 2020 & 2021] Agriculture-Vision Dataset, Prize Challenge and Workshop: A joint effort with many great collaborators to bring Agriculture and Computer Vision/AI communities together to benefit humanity! 
+This is an open competition posted by CVPR 2020 & 2021] Agriculture-Vision Dataset, Prize Challenge and Workshop: 
+A joint effort with many great collaborators to bring Agriculture and Computer Vision/AI communities together to benefit humanity! 
  Resources : 
 
 www.agriculture-vision.com and https://github.com/SHI-Labs/Agriculture-Vision#download.
 
-I have been working on this problem for a few months now and have tried various methods to solve this problem. The description of the problem is as follows:
+I have been working on this problem for a few months now and have tried various methods to solve this problem. 
 
-The dataset used in this challenge is a subset of the Agriculture-Vision dataset. The challenge dataset contains 21,061 aerial farmland images captured throughout 2019 across the US. Each image consists of four 512x512 color channels, which are RGB and Near Infra-red (NIR). Each image also has a boundary map and a mask. The boundary map indicates the region of the farmland, and the mask indicates valid pixels in the image. Regions outside of either the boundary map or the mask are not evaluated.
+The description of the problem is as follows:
 
-This dataset contains six types of annotations: Cloud shadow, Double plant, Planter skip, Standing Water, Waterway and Weed cluster. These types of field anomalies have great impacts on the potential yield of farmlands, therefore it is extremely important to accurately locate them. In the Agriculture-Vision dataset, these six patterns are stored separately as binary masks due to potential overlaps between patterns. Users are free to decide how to use these annotations.
+The dataset used in this challenge is a subset of the Agriculture-Vision dataset. 
+The challenge dataset contains 21,061 aerial farmland images captured throughout 2019 across the US. 
+Each image consists of four 512x512 color channels, which are RGB and Near Infra-red (NIR). Each image also has a boundary map and a mask. 
+The boundary map indicates the region of the farmland, and the mask indicates valid pixels in the image. 
+Regions outside of either the boundary map or the mask are not evaluated.
+
+This dataset contains six types of annotations: Cloud shadow, Double plant, Planter skip, Standing Water, Waterway and Weed cluster. 
+These types of field anomalies have great impacts on the potential yield of farmlands, therefore it is extremely important to accurately locate them. 
+In the Agriculture-Vision dataset, these six patterns are stored separately as binary masks due to potential overlaps between patterns. 
 
 0 - background,  1 - cloud_shadow,  2 - double_plant,  3 - planter_skip,  4 - standing_water,  5 - waterway,  6 - weed_cluster
 
