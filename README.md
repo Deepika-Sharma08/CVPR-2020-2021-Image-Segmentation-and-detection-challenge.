@@ -13,6 +13,7 @@ This is an open competition posted by CVPR 2020 & 2021] Agriculture-Vision Datas
 A joint effort with many great collaborators to bring Agriculture and Computer Vision/AI communities together to benefit humanity! 
 
 Resources : 
+
 www.agriculture-vision.com and https://github.com/SHI-Labs/Agriculture-Vision#download.
 
 I have been working on this problem for a few months now and have tried various methods to solve this problem. 
